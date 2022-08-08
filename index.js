@@ -5,7 +5,8 @@ const progressBar = ({
 
 	percentual, 
 	tipo = 1, 
-	tamanho = 20 
+	tamanho = 30,
+	mostrarPercentual = false
 
 }) => {
 
@@ -24,12 +25,12 @@ const progressBar = ({
 			progresso += tipos[tipo].preenchimento;
 
 		}
-
-		console.log((i + 1) * (100/tamanho));
         
 	}
 
-	let bar = `${tipos[tipo].paredeE}${progresso}${tipos[tipo].paredeD}`;
+	const porcentagem = mostrarPercentual == true ? `${percentual}%` : ''
+
+	let bar = `${tipos[tipo].paredeE}${progresso}${tipos[tipo].paredeD} ${porcentagem}`;
     
 	return bar;
 
@@ -39,8 +40,7 @@ module.exports = progressBar;
 
 console.log(progressBar({
 
-	percentual: 99,
-	tipo: 3,
-	tamanho: 150
+	percentual: 80,
+	tipo: 9,
 
 }));

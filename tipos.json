@@ -72,6 +72,33 @@
             "preenchimento": "▪",
             "vazio": "▫"
 
+        },
+
+        "9": {
+
+            "paredeE": "",
+            "paredeD": "",
+            "preenchimento": "▰ ",
+            "vazio": "▱ "
+
+        },
+
+        "10": {
+
+            "paredeE": "",
+            "paredeD": "",
+            "preenchimento": "▮ ",
+            "vazio": "▯ "
+
+        },
+
+        "11": {
+
+            "paredeE": "",
+            "paredeD": "",
+            "preenchimento": "▶ ",
+            "vazio": "▷ "
+
         }
 
     }
