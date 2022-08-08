@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "npm": "^8.16.0"
+  },
+  "name": "progressbar-ascii",
+  "version": "1.0.0",
+  "description": "Esse pacote gera uma nova barra de progresso.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauloR-qw/progressBar-ascii.git"
+  },
+  "keywords": [
+    "progressbar",
+    "progressBar",
+    "bar",
+    "progress",
+    "ascii"
+  ],
+  "author": "paulooricardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauloR-qw/progressBar-ascii/issues"
+  },
+  "homepage": "https://github.com/PauloR-qw/progressBar-ascii#readme"
+}
