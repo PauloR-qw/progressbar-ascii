@@ -27,3 +27,5 @@ const progressBar = async (percentual) => {
 	return bar;
 
 };
+
+module.exports = progressBar;

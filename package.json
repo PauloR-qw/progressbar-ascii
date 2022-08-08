@@ -3,7 +3,7 @@
     "npm": "^8.16.0"
   },
   "name": "progressbar-ascii",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Esse pacote gera uma nova barra de progresso.",
   "main": "index.js",
   "devDependencies": {},
