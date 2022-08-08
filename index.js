@@ -1,10 +1,14 @@
 const progressBar = async (percentual) => {
 
-    if (percentual != Number) {
+    if (typeof percentual != 'number') {
 
-        throw Error('O valor passado por argumento não é um Número! ' + `${percentual}`);
+        throw Error('O valor passado por argumento não é um Número! ' + percentual);
 
-    }
+    } else if (percentual.isInteger() == false) {
+
+		throw Error('O valor passado é invalido! ' + percentual)
+
+	}
 
 	let progresso = '';
     
