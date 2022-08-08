@@ -1,35 +1,48 @@
-const progressBar = async (percentual) => {
+const { tipos } = require('./tipos.json');
+const ver = require('./ver');
 
-    if (typeof percentual != 'number') {
+const progressBar = ({ 
 
-        throw Error('O valor passado por argumento não é um Número! ' + percentual);
+	percentual, 
+	tipo = 1, 
+	tamanho = 20 
 
-    } else if (percentual.isInteger() == false) {
+}) => {
 
-		throw Error('O valor passado é invalido! ' + percentual)
-
-	}
+    ver(percentual, tipo, tamanho);
 
 	let progresso = '';
+
+	const coef = 0;
     
-	for (let i = 0; i < 20; i++) {
+	for (let i = 0; i < tamanho; i++) {
         
-		if (percentual < (i + 1) * 5) {
+		if (percentual < (i + 1) * (100/tamanho)) {
             
-			progresso += '░';
+			progresso += tipos[tipo].vazio;
             
 		} else {
 
-			progresso += '█';
+			progresso += tipos[tipo].preenchimento;
 
 		}
+
+		console.log((i + 1) * (100/tamanho));
         
 	}
 
-	let bar = `「${progresso}」`;
+	let bar = `${tipos[tipo].paredeE}${progresso}${tipos[tipo].paredeD}`;
     
 	return bar;
 
 };
 
 module.exports = progressBar;
+
+console.log(progressBar({
+
+	percentual: 90,
+	tipo: 3,
+	tamanho: 50
+
+}));

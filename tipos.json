@@ -1,0 +1,79 @@
+{
+    "tipos": {
+        
+        "1": {
+
+            "paredeE": "「",
+            "paredeD": "」",
+            "preenchimento": "█",
+            "vazio": "░"
+
+        },
+
+        "2": {
+
+            "paredeE": "",
+            "paredeD": "",
+            "preenchimento": "█",
+            "vazio": "░"
+
+        },
+        
+        "3": {
+
+            "paredeE": "[",
+            "paredeD": "]",
+            "preenchimento": "=",
+            "vazio": " "
+
+        },
+
+        "4": {
+
+            "paredeE": "[",
+            "paredeD": "]",
+            "preenchimento": "=",
+            "vazio": "∙"
+
+        },
+
+        "5": {
+
+            "paredeE": "",
+            "paredeD": "",
+            "preenchimento": "=",
+            "vazio": "∙"
+
+        },
+
+
+        "6": {
+
+            "paredeE": "{",
+            "paredeD": "}",
+            "preenchimento": "|",
+            "vazio": " "
+
+        },
+
+        "7": {
+
+            "paredeE": "[",
+            "paredeD": "]",
+            "preenchimento": "#",
+            "vazio": " "
+
+        },
+
+        "8": {
+
+            "paredeE": "[",
+            "paredeD": "]",
+            "preenchimento": "▪",
+            "vazio": "▫"
+
+        }
+
+    }
+
+}
