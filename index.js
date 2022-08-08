@@ -12,8 +12,6 @@ const progressBar = ({
     ver(percentual, tipo, tamanho);
 
 	let progresso = '';
-
-	const coef = 0;
     
 	for (let i = 0; i < tamanho; i++) {
         
@@ -41,8 +39,8 @@ module.exports = progressBar;
 
 console.log(progressBar({
 
-	percentual: 90,
+	percentual: 99,
 	tipo: 3,
-	tamanho: 50
+	tamanho: 150
 
 }));
