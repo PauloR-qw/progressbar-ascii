@@ -1,6 +1,6 @@
-const { tipos } = require('./tipos.json')
+const { estilos } = require('./estilos.json')
 
-module.exports = (percentual, tipo = 1, tamanho = 20) => {
+module.exports = (percentual, estilo, tamanho) => {
 
     if (typeof percentual != 'number') {
 
@@ -12,13 +12,13 @@ module.exports = (percentual, tipo = 1, tamanho = 20) => {
 
 	};
 
-	if (typeof tipo != 'number') {
+	if (typeof estilo != 'number') {
 
-        throw Error('O valor passado por argumento não é um Número! ' + tipo);
+        throw Error('O valor passado por argumento não é um Número! ' + estilo);
 
-    } else if (Number.isInteger(tipo) == false || tipo == undefined || tipo <= 0 || tipo > Object.keys(tipos).length) {
+    } else if (Number.isInteger(estilo) == false || estilo == undefined || estilo <= 0 || estilo > Object.keys(estilos).length) {
 
-		throw Error('O valor passado é invalido! ' + tipo)
+		throw Error('O valor passado é invalido! ' + estilo)
 
 	};
 

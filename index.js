@@ -1,16 +1,16 @@
-const { tipos } = require('./tipos.json');
+const { estilos } = require('./estilos.json');
 const ver = require('./ver');
 
 const progressBar = ({ 
 
 	percentual, 
-	tipo = 1, 
-	tamanho = 30,
+	estilo = 1, 
+	tamanho = 20,
 	mostrarPercentual = false
 
 }) => {
 
-    ver(percentual, tipo, tamanho);
+    ver(percentual, estilo, tamanho);
 
 	let progresso = '';
     
@@ -18,11 +18,11 @@ const progressBar = ({
         
 		if (percentual < (i + 1) * (100/tamanho)) {
             
-			progresso += tipos[tipo].vazio;
+			progresso += estilos[estilo].vazio;
             
 		} else {
 
-			progresso += tipos[tipo].preenchimento;
+			progresso += estilos[estilo].preenchimento;
 
 		}
         
@@ -30,7 +30,7 @@ const progressBar = ({
 
 	const porcentagem = mostrarPercentual == true ? `${percentual}%` : ''
 
-	let bar = `${tipos[tipo].paredeE}${progresso}${tipos[tipo].paredeD} ${porcentagem}`;
+	let bar = `${estilos[estilo].paredeE}${progresso}${estilos[estilo].paredeD} ${porcentagem}`;
     
 	return bar;
 
@@ -40,7 +40,7 @@ module.exports = progressBar;
 
 console.log(progressBar({
 
-	percentual: 80,
-	tipo: 9,
+	percentual: 50,
+	estilo: 2,
 
 }));
