@@ -37,10 +37,3 @@ const progressBar = ({
 };
 
 module.exports = progressBar;
-
-console.log(progressBar({
-
-	percentual: 50,
-	estilo: 2,
-
-}));
